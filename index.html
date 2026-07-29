@@ -14,7 +14,9 @@
       <nav aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#games">Games</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
@@ -42,10 +44,46 @@
         </div>
       </section>
 
+      <section id="projects" class="section grid" aria-labelledby="projects-title">
+        <div>
+          <p class="eyebrow">PROJECTS</p>
+          <h2 id="projects-title">GALAXY</h2>
+        </div>
+        <div>
+          <p>Software Engineer · Global market share No. 1</p>
+          <p>System software and backend server systems built with reliability, performance, and maintainability in mind.</p>
+        </div>
+      </section>
+
       <section id="games" class="section game-placeholder" aria-labelledby="games-title">
         <p class="eyebrow">GAMES</p>
         <h2 id="games-title">WORM RUN</h2>
-        <p>The keyboard- and touch-controlled game will be added in the next development loop.</p>
+        <p>Use arrow keys, WASD, or the touch pad. Avoid the walls, yourself, and the random enemies.</p>
+        <div class="game-shell">
+          <div class="game-hud" aria-live="polite">
+            <span>SCORE <strong id="score">0</strong></span>
+            <span>BEST <strong id="best-score">0</strong></span>
+            <span id="game-status">READY</span>
+          </div>
+          <canvas id="game-canvas" width="320" height="320" aria-label="Worm Run game board"></canvas>
+          <div class="game-actions">
+            <button id="start-game" type="button">START</button>
+            <button id="pause-game" type="button" disabled>PAUSE</button>
+            <button id="restart-game" type="button">RESTART</button>
+          </div>
+          <div class="touch-pad" aria-label="Touch controls">
+            <button type="button" data-direction="up" aria-label="Move up">↑</button>
+            <button type="button" data-direction="left" aria-label="Move left">←</button>
+            <button type="button" data-direction="down" aria-label="Move down">↓</button>
+            <button type="button" data-direction="right" aria-label="Move right">→</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <p class="eyebrow">CONTACT</p>
+        <h2 id="contact-title">START A CONVERSATION.</h2>
+        <a class="contact-link" href="mailto:sehong.kwon@gmail.com">sehong.kwon@gmail.com</a>
       </section>
     </main>
 
